@@ -1,17 +1,32 @@
 {
-	"name": "lib-markdown",
+	"name": "markdownurlfinder",
 	"version": "1.0.0",
-	"description": "",
+	"description": "This lib was made to find URLs in .md files and, if wanted, test the URLs, returning the status code",
 	"exports": "./index.js",
+	"main": "./cli.js",
+	"bin": {
+		"markdownurlfinder": "./cli.js"
+	},
+	"preferGlobal": true,
 	"scripts": {
 		"start": "node cli.js ./text1.md",
 		"validate": "node cli.js ./text1.md validate",
 		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
 	},
 	"type": "module",
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"markdown",
+		"url",
+		"urlfinder",
+		"urltester"
+	],
+	"author": "Thomas Luizon",
 	"license": "ISC",
+	"homepage": "https://github.com/thomasluizon/markdown-url-finder-and-tester",
+	"bugs": {
+		"url": "https://github.com/thomasluizon/markdown-url-finder-and-tester/issues",
+		"email": "thomaslrgregorio@gmail.com"
+	},
 	"dependencies": {
 		"axios": "^0.27.2",
 		"chalk": "^5.0.1"
